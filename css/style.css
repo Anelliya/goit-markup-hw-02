@@ -11,7 +11,16 @@
   --third-font-size: 18px;
 }
 
-body {
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
   font-family: var(--main-font);
   background: var(--third-text-color);
 }
@@ -30,7 +39,7 @@ body {
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -231,7 +240,7 @@ body {
 .filter .link {
   font-weight: 500;
   font-size: var(--second-font-size);
-  line-height: 1, 63;
+  line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
   background-color: var(--background-first-color);
